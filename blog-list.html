@@ -1,0 +1,53 @@
+To add a page that lists all the links to your existing blogs, you can create a new HTML file called `blog-list.html`. Here's an example code for that file:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        ul {
+            list-style-type: none; /* Add this line to remove the bullets */
+            padding: 0; /* Add this line to remove default padding */
+            margin: 0; /* Add this line to remove default margin */
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-video">
+        <video autoplay muted loop>
+            <source src="header_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+
+        <div class="button-container">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="blog-list.html" class="nav-button">All Blog Posts</a>
+            <!-- <a href="#" class="nav-button">Contact</a> -->
+        </div>
+    </div>
+</header>
+
+<main>
+    <h3>All Blog Posts</h3>
+
+    <ul>
+        <li><a href="blog.html">Blog No.1 - Top 10 Vacation Destinations for the Intrepid Traveler</a></li>
+        <!-- Add more list items for each blog post with their respective links -->
+        <!-- <li><a href="blog2.html">Blog No.2 - Stay Tuned for the next Blog</a></li> -->
+        <!-- <li><a href="blog3.html">Blog No.3 - To Follow Shortly</a></li> -->
+        <!-- Add more list items as needed -->
+    </ul>
+
+</main>
+
+<footer>
+    <p>&copy; 2023 Top Ten with Kennedia Dee</p>
+</footer>
+
+</body>
+</html>

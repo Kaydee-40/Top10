@@ -1,0 +1,91 @@
+/* Reset some default styles in the browser */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+header {
+    padding: 25px 0;
+    height: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 999; /* Add this line to ensure the header stays on top */
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-video {
+    position: relative;
+    height: 100%;
+}
+
+header video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button-container {
+    position: absolute;
+    top: 100%;
+    left: 0;  /* Set left to 0 so the box starts at the left edge */
+    width: 100%;  /* Set width to 100% so the box spans the entire width */
+    transform: translateY(-50%); /* Adjust this value to vertically center the box */
+    padding: 10px;  /* Add some padding to space the buttons from the box edges */
+    background-color: black; /* Set the background color to black */
+    text-align: center;
+}
+
+.nav-button {
+    display: inline-block;
+    background-color: #d4c0ff;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 40px;
+    margin-top: 340px; /* Adjust this value to account for the fixed header height */
+    text-align: center;
+    padding-top: 50px; /* Add this line to create space between header and content */
+}
+
+footer {
+    background-color: #dbeaf9;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
